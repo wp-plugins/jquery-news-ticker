@@ -1,0 +1,63 @@
+=== Jquery news ticker ===
+Contributors: www.gopiplus.com, gopiplus
+Donate link: http://www.gopiplus.com/work/2013/10/03/jquery-news-ticker-wordpress-plugin/
+Author URI: http://www.gopiplus.com/work/2013/10/03/jquery-news-ticker-wordpress-plugin/
+Plugin URI: http://www.gopiplus.com/work/2013/10/03/jquery-news-ticker-wordpress-plugin/
+Tags: jquery, ticker, plugin, widget
+Requires at least: 3.2
+Tested up to: 3.7
+Stable tag: 1.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Jquery news ticker plugin brings a lightweight, flexible and easy to configure ticker plugin to site. This plugin adds scrolling horizontal tickers.
+
+== Description ==
+
+Check official website for live demo [http://www.gopiplus.com/work/2013/10/03/jquery-news-ticker-wordpress-plugin/](http://www.gopiplus.com/work/2013/10/03/jquery-news-ticker-wordpress-plugin/)
+
+*   [Live Demo](http://www.gopiplus.com/work/2013/10/03/jquery-news-ticker-wordpress-plugin/)	
+*   [More info](http://www.gopiplus.com/work/2013/10/03/jquery-news-ticker-wordpress-plugin/)				
+*   [Comments/Suggestion](http://www.gopiplus.com/work/2013/10/03/jquery-news-ticker-wordpress-plugin/)
+
+Jquery news ticker plugin brings a lightweight, flexible and easy to configure news ticker plugin to wordpress website. This plugin adds scrolling horizontal tickers to your site. It can be use as a fade in fade out ticker too. You can enter your news via HTML mark-ups manually in the admin dashboard.
+
+**Advantage of this plugin**
+
+*   Lightweight JQuery
+*   Easy to configuration
+*   Multi-widget option
+*   Expiration date for the messages
+*   Plugin tested with IE6+, FF 20+, Chrome, Safari.
+
+== Installation ==
+
+[Installation Instruction and Configuration](http://www.gopiplus.com/work/2013/10/03/jquery-news-ticker-wordpress-plugin/)	
+
+== Frequently Asked Questions ==
+
+Q1. How to arrange the speed of the reveal text?
+
+Q2. How to arrange the pause time for fade-in effect?
+
+Q3. Is possible to add expiration date for the ticket news?
+
+Q4. Which browsers does this support?
+
+== Screenshots ==
+
+1. http://www.gopiplus.com/work/2013/10/03/jquery-news-ticker-wordpress-plugin/
+
+2. http://www.gopiplus.com/work/2013/10/03/jquery-news-ticker-wordpress-plugin/
+
+== Changelog ==
+
+= 1.0 =	
+
+First version
+
+== Upgrade Notice ==
+
+= 1.0 =				
+
+First version.

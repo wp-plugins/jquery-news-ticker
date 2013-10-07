@@ -1,0 +1,138 @@
+.gticker-wrapper.has-js {
+	margin: 10px 0px 10px 0px;
+	padding: 0px 20px;
+	width: 95%;
+	height: 32px;
+	display: block;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	background-color: #F2F2F2;
+	font-size:12px;
+	text-align:center;
+}
+.gticker {
+	width: 80%;
+	height: 23px;
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+.gticker-title {
+	padding-top: 9px;
+	font-weight: bold;
+}
+.gticker-content {
+	margin: 0px;
+	padding-top: 9px;
+	position: absolute;
+	overflow: hidden;
+	white-space: nowrap;
+	line-height: 1.2em;
+}
+.gticker-content:focus {
+	none;
+}
+.gticker-content a {
+	text-decoration: none;	
+}
+.gticker-content a:hover {
+	text-decoration: underline;	
+}
+.gticker-swipe {
+	padding-top: 9px;
+	position: absolute;
+	top: 0px;
+	background-color: #F2F2F2;
+	display: block;
+	width: 97%;
+	height: 23px; 
+}
+.gticker-swipe span {
+	margin-left: 1px;
+	background-color: #F2F2F2;
+	border-bottom: 1px solid #1F527B;
+	height: 12px;
+	width: 7px;
+	display: block;
+}
+.gticker-controls {
+	padding: 0px 0px 0px 0px;
+	list-style-type: none;
+	float: left;
+	vertical-align:top;
+}
+.gticker-controls li {
+	padding: 0px;
+	margin-left: 5px;
+	float: left;
+	cursor: pointer;
+	height: 16px;
+	width: 16px;
+	display: block;
+}
+.gticker-controls li.jnt-play-pause {
+	background-image: url('../images/controls.png');
+	background-position: 32px 16px;
+}
+.gticker-controls li.jnt-play-pause.over {
+	background-position: 32px 32px;
+}
+.gticker-controls li.jnt-play-pause.down {
+	background-position: 32px 0px;
+}
+.gticker-controls li.jnt-play-pause.paused {
+	background-image: url('../images/controls.png');	
+	background-position: 48px 16px;
+}
+.gticker-controls li.jnt-play-pause.paused.over {
+	background-position: 48px 32px;
+}
+.gticker-controls li.jnt-play-pause.paused.down {
+	background-position: 48px 0px;
+}
+.gticker-controls li.jnt-prev {
+	background-image: url('../images/controls.png');
+	background-position: 0px 16px;		
+}
+.gticker-controls li.jnt-prev.over {
+	background-position: 0px 32px;		
+}
+.gticker-controls li.jnt-prev.down {
+	background-position: 0px 0px;		
+}
+.gticker-controls li.jnt-next {
+	background-image: url('../images/controls.png');	
+	background-position: 16px 16px;	
+}
+.gticker-controls li.jnt-next.over {
+	background-position: 16px 32px;	
+}
+.gticker-controls li.jnt-next.down {	
+	background-position: 16px 0px;	
+}
+.js-hidden {
+	display: none;
+}
+.no-js-news {
+	padding: 10px 0px 0px 45px; 
+	color: #F8F0DB;
+}
+.left .gticker-swipe {
+	/*left: 80px;*/
+}
+.left .gticker-controls, .left .gticker-content, .left .gticker-title, .left .gticker {
+    float: left;
+}
+.left .gticker-controls {
+    padding-left: 6px;
+}
+.right .gticker-swipe {
+	/*right: 80px;*/
+}
+.right .gticker-controls, .right .gticker-content, .right .gticker-title, .right .gticker {
+    float: right;
+}
+.right .gticker-controls {
+    padding-right: 6px;
+}
