@@ -3,7 +3,7 @@
 Plugin Name: Jquery news ticker
 Description: Jquery news ticker plugin brings a lightweight, flexible and easy to configure news ticker plugin to wordpress website. This plugin adds scrolling horizontal tickers to your site.
 Author: Gopi.R
-Version: 1.0
+Version: 1.1
 Plugin URI: http://www.gopiplus.com/work/2013/10/03/jquery-news-ticker-wordpress-plugin/
 Author URI: http://www.gopiplus.com/work/2013/10/03/jquery-news-ticker-wordpress-plugin/
 Donate link: http://www.gopiplus.com/work/2013/10/03/jquery-news-ticker-wordpress-plugin/
@@ -13,11 +13,20 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 global $wpdb, $Jntp_db_version;
 define("Jntp_Table", $wpdb->prefix . "jquery_newsticker");
-define("Jntp_UNIQUE_NAME", "jquery-news-ticker");
-define("Jntp_TITLE", "Jquery news ticker");
 define('Jntp_FAV', 'http://www.gopiplus.com/work/2013/10/03/jquery-news-ticker-wordpress-plugin/');
-define('Jntp_LINK', 'Check official website for more information <a target="_blank" href="'.Jntp_FAV.'">click here</a>');
 $Jntp_db_version = "1.0";
+
+if ( ! defined( 'Jntp_basename' ) )
+	define( 'Jntp_basename', plugin_basename( __FILE__ ) );
+	
+if ( ! defined( 'Jntp_pluginname' ) )
+	define( 'Jntp_pluginname', trim( dirname( Jntp_basename ), '/' ) );
+	
+if ( ! defined( 'Jntp_pluginurl' ) )
+	define( 'Jntp_pluginurl', WP_PLUGIN_URL . '/' . Jntp_pluginname );
+	
+if ( ! defined( 'Jntp_adminurl' ) )
+	define( 'Jntp_adminurl', get_option('siteurl') . '/wp-admin/options-general.php?page=jquery-news-ticker' );
 
 function newsticker( $group = "", $title = "", $direction = "", $type = "", $pause = "", $speed = "" )
 {
@@ -152,7 +161,7 @@ function Jntp_install()
 			 Jntp_extra2 VARCHAR(100) NOT NULL default '' ,
 			 Jntp_extra3 VARCHAR(100) NOT NULL default '' ,
 			 UNIQUE KEY Jntp_id (Jntp_id)
-		  );";  
+		  ) ENGINE=MyISAM  DEFAULT CHARSET=utf8;";  
 		require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
 		dbDelta( $sSql );
 	}
@@ -198,7 +207,7 @@ function Jntp_admin()
 
 function Jntp_add_to_menu() 
 {
-	add_options_page('Jquery news ticker', 'Jquery news ticker', 'manage_options', 'jquery-news-ticker', 'Jntp_admin' );
+	add_options_page( __('Jquery news ticker', 'jquery-news-ticker'), __('Jquery news ticker', 'jquery-news-ticker'), 'manage_options', 'jquery-news-ticker', 'Jntp_admin' );
 }
 
 if (is_admin()) 
@@ -211,8 +220,8 @@ function Jntp_add_javascript_files()
 	if (!is_admin())
 	{
 		wp_enqueue_script('jquery');
-		wp_enqueue_style( 'jquery.ticker', get_option('siteurl').'/wp-content/plugins/jquery-news-ticker/inc/jquery-news-ticker.css');
-		wp_enqueue_script('jquery.news.ticker', get_option('siteurl').'/wp-content/plugins/jquery-news-ticker/inc/jquery-news-ticker.js');
+		wp_enqueue_style( 'jquery.ticker', Jntp_pluginurl.'/inc/jquery-news-ticker.css');
+		wp_enqueue_script('jquery.news.ticker', Jntp_pluginurl.'/inc/jquery-news-ticker.js');
 	}
 }   
 
@@ -221,7 +230,7 @@ class Jntp_widget_register extends WP_Widget
 {
 	function __construct() 
 	{
-		$widget_ops = array('classname' => 'widget_text newsticker-widget', 'description' => __('Jquery news ticker'), 'jquery-news-ticker');
+		$widget_ops = array('classname' => 'widget_text newsticker-widget', 'description' => __('Jquery news ticker', 'jquery-news-ticker'), 'jquery-news-ticker');
 		parent::__construct('jquery-news-ticker', __('Jquery news ticker', 'jquery-news-ticker'), $widget_ops);
 	}
 	
@@ -329,7 +338,10 @@ class Jntp_widget_register extends WP_Widget
 			</select>
 			
         </p>
-		<p><?php echo Jntp_LINK; ?></p>
+		<p>
+			<?php _e('Check official website for more information', 'jquery-news-ticker'); ?>
+			<a target="_blank" href="<?php echo Jntp_FAV; ?>"><?php _e('click here', 'jquery-news-ticker'); ?></a>
+		</p>
 		<?php
 	}
 
@@ -347,6 +359,12 @@ function Jntp_widget_loading()
 	register_widget( 'Jntp_widget_register' );
 }
 
+function Jntp_textdomain() 
+{
+	  load_plugin_textdomain( 'jquery-news-ticker', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+}
+
+add_action('plugins_loaded', 'Jntp_textdomain');
 add_shortcode( 'jquery-news-ticker', 'Jntp_shortcode' );
 add_action('wp_enqueue_scripts', 'Jntp_add_javascript_files');
 register_activation_hook(__FILE__, 'Jntp_install');

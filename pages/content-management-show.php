@@ -17,7 +17,7 @@ if (isset($_POST['frm_Jntp_display']) && $_POST['frm_Jntp_display'] == 'yes')
 	
 	if ($result != '1')
 	{
-		?><div class="error fade"><p><strong>Oops, selected details doesn't exist (1).</strong></p></div><?php
+		?><div class="error fade"><p><strong><?php _e('Oops, selected details doesnt exist.', 'jquery-news-ticker'); ?></strong></p></div><?php
 	}
 	else
 	{
@@ -31,7 +31,7 @@ if (isset($_POST['frm_Jntp_display']) && $_POST['frm_Jntp_display'] == 'yes')
 			$wpdb->query($sSql);
 			
 			$Jntp_success_msg = TRUE;
-			$Jntp_success = __('Selected record was successfully deleted.', Jntp_UNIQUE_NAME);
+			$Jntp_success = __('Selected record was successfully deleted.', 'jquery-news-ticker');
 		}
 	}
 	
@@ -43,34 +43,35 @@ if (isset($_POST['frm_Jntp_display']) && $_POST['frm_Jntp_display'] == 'yes')
 ?>
 <div class="wrap">
   <div id="icon-edit" class="icon32 icon32-posts-post"></div>
-    <h2><?php echo Jntp_TITLE; ?><a class="add-new-h2" href="<?php echo get_option('siteurl'); ?>/wp-admin/options-general.php?page=jquery-news-ticker&amp;ac=add">Add New</a></h2>
+    <h2><?php _e('Jquery news ticker', 'jquery-news-ticker'); ?>
+	<a class="add-new-h2" href="<?php echo Jntp_adminurl; ?>&amp;ac=add"><?php _e('Add New', 'jquery-news-ticker'); ?></a></h2>
     <div class="tool-box">
 	<?php
 		$sSql = "SELECT * FROM `".Jntp_Table."` order by Jntp_id desc";
 		$myData = array();
 		$myData = $wpdb->get_results($sSql, ARRAY_A);
 		?>
-		<script language="JavaScript" src="<?php echo get_option('siteurl'); ?>/wp-content/plugins/jquery-news-ticker/pages/setting.js"></script>
+		<script language="JavaScript" src="<?php echo Jntp_pluginurl; ?>/pages/setting.js"></script>
 		<form name="frm_Jntp_display" method="post">
       <table width="100%" class="widefat" id="straymanage">
         <thead>
           <tr>
             <th class="check-column" scope="col"><input type="checkbox" name="Jntp_group_item[]" /></th>
-			<th scope="col">News</th>
-			<th scope="col">Group</th>
-			<th scope="col">Display</th>
-			<th scope="col">Expiration</th>
-			<th scope="col">Order</th>
+			<th scope="col"><?php _e('News', 'jquery-news-ticker'); ?></th>
+			<th scope="col"><?php _e('Group', 'jquery-news-ticker'); ?></th>
+			<th scope="col"><?php _e('Display', 'jquery-news-ticker'); ?></th>
+			<th scope="col"><?php _e('Expiration', 'jquery-news-ticker'); ?></th>
+			<th scope="col"><?php _e('Order', 'jquery-news-ticker'); ?></th>
           </tr>
         </thead>
 		<tfoot>
           <tr>
             <th class="check-column" scope="col"><input type="checkbox" name="Jntp_group_item[]" /></th>
-			<th scope="col">News</th>
-			<th scope="col">Group</th>
-			<th scope="col">Display</th>
-			<th scope="col">Expiration</th>
-			<th scope="col">Order</th>
+			<th scope="col"><?php _e('News', 'jquery-news-ticker'); ?></th>
+			<th scope="col"><?php _e('Group', 'jquery-news-ticker'); ?></th>
+			<th scope="col"><?php _e('Display', 'jquery-news-ticker'); ?></th>
+			<th scope="col"><?php _e('Expiration', 'jquery-news-ticker'); ?></th>
+			<th scope="col"><?php _e('Order', 'jquery-news-ticker'); ?></th>
           </tr>
         </tfoot>
 		<tbody>
@@ -85,8 +86,8 @@ if (isset($_POST['frm_Jntp_display']) && $_POST['frm_Jntp_display'] == 'yes')
 						<td align="left"><input type="checkbox" value="<?php echo $data['Jntp_id']; ?>" name="Jntp_group_item[]"></td>
 						<td><?php echo stripslashes($data['Jntp_text']); ?>
 						<div class="row-actions">
-							<span class="edit"><a title="Edit" href="<?php echo get_option('siteurl'); ?>/wp-admin/options-general.php?page=jquery-news-ticker&amp;ac=edit&amp;did=<?php echo $data['Jntp_id']; ?>">Edit</a> | </span>
-							<span class="trash"><a onClick="javascript:_Jntp_delete('<?php echo $data['Jntp_id']; ?>')" href="javascript:void(0);">Delete</a></span> 
+						<span class="edit"><a title="Edit" href="<?php echo Jntp_adminurl; ?>&amp;ac=edit&amp;did=<?php echo $data['Jntp_id']; ?>"><?php _e('Edit', 'jquery-news-ticker'); ?></a> | </span>
+						<span class="trash"><a onClick="javascript:_Jntp_delete('<?php echo $data['Jntp_id']; ?>')" href="javascript:void(0);"><?php _e('Delete', 'jquery-news-ticker'); ?></a></span> 
 						</div>
 						</td>
 						<td><?php echo $data['Jntp_group']; ?></td>
@@ -100,7 +101,7 @@ if (isset($_POST['frm_Jntp_display']) && $_POST['frm_Jntp_display'] == 'yes')
 			}
 			else
 			{
-				?><tr><td colspan="6" align="center">No records available.</td></tr><?php 
+				?><tr><td colspan="6" align="center"><?php _e('No records available.', 'jquery-news-ticker'); ?></td></tr><?php 
 			}
 			?>
 		</tbody>
@@ -110,17 +111,20 @@ if (isset($_POST['frm_Jntp_display']) && $_POST['frm_Jntp_display'] == 'yes')
       </form>	
 	  <div class="tablenav">
 	  <h2>
-	  <a class="button add-new-h2" href="<?php echo get_option('siteurl'); ?>/wp-admin/options-general.php?page=jquery-news-ticker&amp;ac=add">Add New</a>
-	  <a class="button add-new-h2" target="_blank" href="<?php echo Jntp_FAV; ?>">Help</a>
+	  <a class="button add-new-h2" href="<?php echo Jntp_adminurl; ?>&amp;ac=add"><?php _e('Add New', 'jquery-news-ticker'); ?></a>
+	  <a class="button add-new-h2" target="_blank" href="<?php echo Jntp_FAV; ?>"><?php _e('Help', 'jquery-news-ticker'); ?></a>
 	  </h2>
 	  </div>
 	  <div style="height:8px"></div>
-	<h3>Plugin configuration option</h3>
+	<h3><?php _e('Plugin configuration option', 'jquery-news-ticker'); ?></h3>
 	<ol>
-		<li>Drag and drop the widget to your sidebar.</li>
-		<li>Add the ticker in posts or pages using short code.</li>
-		<li>Add directly in to the theme using PHP code.</li>
+		<li><?php _e('Drag and drop the widget to your sidebar.', 'jquery-news-ticker'); ?></li>
+		<li><?php _e('Add the ticker in posts or pages using short code.', 'jquery-news-ticker'); ?></li>
+		<li><?php _e('Add directly in to the theme using PHP code.', 'jquery-news-ticker'); ?></li>
 	</ol>
-	<p class="description"><?php echo Jntp_LINK; ?></p>
+	<p class="description">
+		<?php _e('Check official website for more information', 'jquery-news-ticker'); ?>
+		<a target="_blank" href="<?php echo Jntp_FAV; ?>"><?php _e('click here', 'jquery-news-ticker'); ?></a>
+	</p>
 	</div>
 </div>
