@@ -29,6 +29,7 @@ Jquery news ticker plugin brings a lightweight, flexible and easy to configure n
 *   Multi-widget option
 *   Expiration date for the messages
 *   Plugin tested with IE6+, FF 20+, Chrome, Safari.
+*   Supports localization.
 
 == Installation ==
 
