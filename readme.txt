@@ -5,8 +5,8 @@ Author URI: http://www.gopiplus.com/work/2013/10/03/jquery-news-ticker-wordpress
 Plugin URI: http://www.gopiplus.com/work/2013/10/03/jquery-news-ticker-wordpress-plugin/
 Tags: jquery, ticker, plugin, widget
 Requires at least: 3.6
-Tested up to: 3.8
-Stable tag: 1.1
+Tested up to: 3.9
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -65,6 +65,10 @@ First version
 Plugin *.po file (TinyCarousel.po) available in the languages folder. Translators Welcome.
 3. Supports network multisite website (Needs to create table manually).
 
+= 1.2 =	
+
+1. Tested up to 3.9
+
 == Upgrade Notice ==
 
 = 1.0 =				
@@ -77,3 +81,7 @@ First version.
 2. Now this plugin supports localization (or internationalization). i.e. option to translate into other languages. 
 Plugin *.po file (TinyCarousel.po) available in the languages folder. Translators Welcome.
 3. Supports network multisite website (Needs to create table manually).
+
+= 1.2 =	
+
+1. Tested up to 3.9
