@@ -3,7 +3,7 @@ Contributors: www.gopiplus.com, gopiplus
 Donate link: http://www.gopiplus.com/work/2013/10/03/jquery-news-ticker-wordpress-plugin/
 Author URI: http://www.gopiplus.com/work/2013/10/03/jquery-news-ticker-wordpress-plugin/
 Plugin URI: http://www.gopiplus.com/work/2013/10/03/jquery-news-ticker-wordpress-plugin/
-Tags: jquery, ticker, plugin, widget
+Tags: jquery, ticker, news
 Requires at least: 3.6
 Tested up to: 3.9
 Stable tag: 1.2
