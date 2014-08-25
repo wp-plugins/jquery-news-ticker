@@ -3,7 +3,7 @@
 Plugin Name: Jquery news ticker
 Description: Jquery news ticker plugin brings a lightweight, flexible and easy to configure news ticker plugin to wordpress website. This plugin adds scrolling horizontal tickers to your site.
 Author: Gopi Ramasamy
-Version: 1.2
+Version: 1.3
 Plugin URI: http://www.gopiplus.com/work/2013/10/03/jquery-news-ticker-wordpress-plugin/
 Author URI: http://www.gopiplus.com/work/2013/10/03/jquery-news-ticker-wordpress-plugin/
 Donate link: http://www.gopiplus.com/work/2013/10/03/jquery-news-ticker-wordpress-plugin/

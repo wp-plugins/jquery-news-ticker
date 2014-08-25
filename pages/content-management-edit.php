@@ -140,11 +140,11 @@ if ($Jntp_error_found == FALSE && strlen($Jntp_success) > 0)
       <h3><?php _e('Update Details', 'jquery-news-ticker'); ?></h3>
 	  
 	  <label for="tag-a"><?php _e('News', 'jquery-news-ticker'); ?></label>
-		<textarea name="Jntp_text" id="Jntp_text" cols="130" rows="2"><?php echo esc_html(stripslashes($form['Jntp_text'])); ?></textarea>
+		<textarea name="Jntp_text" id="Jntp_text" cols="90" rows="2"><?php echo esc_html(stripslashes($form['Jntp_text'])); ?></textarea>
 		<p><?php _e('Please enter your ticker news.', 'jquery-news-ticker'); ?></p>
 		
 		<label for="tag-a"><?php _e('Link', 'jquery-news-ticker'); ?></label>
-		<input name="Jntp_link" type="text" id="Jntp_link" value="<?php echo $form['Jntp_link']; ?>" size="133" maxlength="1024" />
+		<input name="Jntp_link" type="text" id="Jntp_link" value="<?php echo $form['Jntp_link']; ?>" size="90" maxlength="1024" />
 		<p><?php _e('Please enter your link.', 'jquery-news-ticker'); ?></p>
 		
 		<label for="tag-a"><?php _e('Order', 'jquery-news-ticker'); ?></label>
