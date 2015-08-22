@@ -3,6 +3,7 @@
 if (isset($_POST['frm_Jntp_display']) && $_POST['frm_Jntp_display'] == 'yes')
 {
 	$did = isset($_GET['did']) ? $_GET['did'] : '0';
+	if(!is_numeric($did)) { die('<p>Are you sure you want to do this?</p>'); }
 	
 	$Jntp_success = '';
 	$Jntp_success_msg = FALSE;
@@ -56,7 +57,6 @@ if (isset($_POST['frm_Jntp_display']) && $_POST['frm_Jntp_display'] == 'yes')
       <table width="100%" class="widefat" id="straymanage">
         <thead>
           <tr>
-            <th class="check-column" scope="col"><input type="checkbox" name="Jntp_group_item[]" /></th>
 			<th scope="col"><?php _e('News', 'jquery-news-ticker'); ?></th>
 			<th scope="col"><?php _e('Group', 'jquery-news-ticker'); ?></th>
 			<th scope="col"><?php _e('Display', 'jquery-news-ticker'); ?></th>
@@ -66,7 +66,6 @@ if (isset($_POST['frm_Jntp_display']) && $_POST['frm_Jntp_display'] == 'yes')
         </thead>
 		<tfoot>
           <tr>
-            <th class="check-column" scope="col"><input type="checkbox" name="Jntp_group_item[]" /></th>
 			<th scope="col"><?php _e('News', 'jquery-news-ticker'); ?></th>
 			<th scope="col"><?php _e('Group', 'jquery-news-ticker'); ?></th>
 			<th scope="col"><?php _e('Display', 'jquery-news-ticker'); ?></th>
@@ -83,7 +82,6 @@ if (isset($_POST['frm_Jntp_display']) && $_POST['frm_Jntp_display'] == 'yes')
 				{
 					?>
 					<tr class="<?php if ($i&1) { echo'alternate'; } else { echo ''; }?>">
-						<td align="left"><input type="checkbox" value="<?php echo $data['Jntp_id']; ?>" name="Jntp_group_item[]"></td>
 						<td><?php echo stripslashes($data['Jntp_text']); ?>
 						<div class="row-actions">
 						<span class="edit"><a title="Edit" href="<?php echo Jntp_adminurl; ?>&amp;ac=edit&amp;did=<?php echo $data['Jntp_id']; ?>"><?php _e('Edit', 'jquery-news-ticker'); ?></a> | </span>
@@ -101,7 +99,7 @@ if (isset($_POST['frm_Jntp_display']) && $_POST['frm_Jntp_display'] == 'yes')
 			}
 			else
 			{
-				?><tr><td colspan="6" align="center"><?php _e('No records available.', 'jquery-news-ticker'); ?></td></tr><?php 
+				?><tr><td colspan="5" align="center"><?php _e('No records available.', 'jquery-news-ticker'); ?></td></tr><?php 
 			}
 			?>
 		</tbody>
