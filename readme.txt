@@ -31,6 +31,10 @@ Jquery news ticker plugin brings a lightweight, flexible and easy to configure n
 *   Plugin tested with IE6+, FF 20+, Chrome, Safari.
 *   Supports localization.
 
+= Translators =
+
+* French (fr_FR) - [Shannon Martin](http://purehcgdietdrops.com/)
+
 == Installation ==
 
 [Installation Instruction and Configuration](http://www.gopiplus.com/work/2013/10/03/jquery-news-ticker-wordpress-plugin/)	

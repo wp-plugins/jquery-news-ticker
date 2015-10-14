@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Jquery news ticker\n"
-"POT-Creation-Date: 2014-08-03 00:18+0800\n"
-"PO-Revision-Date: 2014-08-03 00:18+0800\n"
+"POT-Creation-Date: 2015-10-14 21:31+0800\n"
+"PO-Revision-Date: 2015-10-14 21:31+0800\n"
 "Last-Translator: \n"
 "Language-Team: www.gopiplus.com <www.gopiplus.com>\n"
 "MIME-Version: 1.0\n"
@@ -15,8 +15,8 @@ msgstr ""
 
 #: ../jquery-news-ticker.php:210 ../jquery-news-ticker.php:233
 #: ../jquery-news-ticker.php:234 ../pages/content-management-add.php:116
-#: ../pages/content-management-edit.php:138
-#: ../pages/content-management-show.php:46
+#: ../pages/content-management-edit.php:139
+#: ../pages/content-management-show.php:47
 msgid "Jquery news ticker"
 msgstr "செய்திகள் சுருளை"
 
@@ -41,61 +41,61 @@ msgid "Pause time (Only number)"
 msgstr "காத்திருக்க நேரம்"
 
 #: ../jquery-news-ticker.php:325 ../pages/content-management-add.php:139
-#: ../pages/content-management-edit.php:161
+#: ../pages/content-management-edit.php:162
 #: ../pages/content-management-show.php:61
-#: ../pages/content-management-show.php:71
+#: ../pages/content-management-show.php:70
 msgid "Group"
 msgstr "குழு"
 
 #: ../jquery-news-ticker.php:342 ../pages/content-management-add.php:170
-#: ../pages/content-management-edit.php:192
-#: ../pages/content-management-show.php:126
+#: ../pages/content-management-edit.php:193
+#: ../pages/content-management-show.php:124
 msgid "Check official website for more information"
 msgstr "மேலும் தகவலுக்கு அதிகாரப்பூர்வ இணையதளம் பாருங்கள்"
 
 #: ../jquery-news-ticker.php:343 ../pages/content-management-add.php:171
-#: ../pages/content-management-edit.php:193
-#: ../pages/content-management-show.php:127
+#: ../pages/content-management-edit.php:194
+#: ../pages/content-management-show.php:125
 msgid "click here"
 msgstr "இங்கே கிளிக் செய்யவும்"
 
 #: ../pages/content-management-add.php:29
 #: ../pages/content-management-add.php:122
-#: ../pages/content-management-edit.php:57
-#: ../pages/content-management-edit.php:144
+#: ../pages/content-management-edit.php:58
+#: ../pages/content-management-edit.php:145
 msgid "Please enter your ticker news."
 msgstr "Please enter your ticker news."
 
 #: ../pages/content-management-add.php:36
 #: ../pages/content-management-add.php:126
-#: ../pages/content-management-edit.php:64
-#: ../pages/content-management-edit.php:148
+#: ../pages/content-management-edit.php:65
+#: ../pages/content-management-edit.php:149
 msgid "Please enter your link."
 msgstr "Please enter your link."
 
 #: ../pages/content-management-add.php:43
 #: ../pages/content-management-add.php:130
-#: ../pages/content-management-edit.php:71
-#: ../pages/content-management-edit.php:152
+#: ../pages/content-management-edit.php:72
+#: ../pages/content-management-edit.php:153
 msgid "Please enter your display order."
 msgstr "Please enter your display order."
 
 #: ../pages/content-management-add.php:50
 #: ../pages/content-management-add.php:137
-#: ../pages/content-management-edit.php:78
-#: ../pages/content-management-edit.php:159
+#: ../pages/content-management-edit.php:79
+#: ../pages/content-management-edit.php:160
 msgid "Please select your display status."
 msgstr "Please select your display status."
 
 #: ../pages/content-management-add.php:57
 #: ../pages/content-management-add.php:153
-#: ../pages/content-management-edit.php:85
-#: ../pages/content-management-edit.php:175
+#: ../pages/content-management-edit.php:86
+#: ../pages/content-management-edit.php:176
 msgid "Please select available group for your news."
 msgstr "Please select available group for your news."
 
 #: ../pages/content-management-add.php:64
-#: ../pages/content-management-edit.php:92
+#: ../pages/content-management-edit.php:93
 msgid "Please enter the expiration date in this format YYYY-MM-DD."
 msgstr "Please enter the expiration date in this format YYYY-MM-DD."
 
@@ -104,12 +104,12 @@ msgid "New details was successfully added."
 msgstr "புதிய விவரங்கள் வெற்றிகரமாக சேர்க்கப்பட்டது."
 
 #: ../pages/content-management-add.php:108
-#: ../pages/content-management-edit.php:130
+#: ../pages/content-management-edit.php:131
 msgid "Click here"
 msgstr "இங்கே கிளிக் செய்யவும்"
 
 #: ../pages/content-management-add.php:108
-#: ../pages/content-management-edit.php:130
+#: ../pages/content-management-edit.php:131
 msgid "to view the details"
 msgstr "விவரங்கள் பார்வையிட"
 
@@ -118,38 +118,38 @@ msgid "Add details"
 msgstr "விவரங்களை சேர்"
 
 #: ../pages/content-management-add.php:120
-#: ../pages/content-management-edit.php:142
+#: ../pages/content-management-edit.php:143
 #: ../pages/content-management-show.php:60
-#: ../pages/content-management-show.php:70
+#: ../pages/content-management-show.php:69
 msgid "News"
 msgstr "செய்தி"
 
 #: ../pages/content-management-add.php:124
-#: ../pages/content-management-edit.php:146
+#: ../pages/content-management-edit.php:147
 msgid "Link"
 msgstr "இணைப்பு"
 
 #: ../pages/content-management-add.php:128
-#: ../pages/content-management-edit.php:150
+#: ../pages/content-management-edit.php:151
 #: ../pages/content-management-show.php:64
-#: ../pages/content-management-show.php:74
+#: ../pages/content-management-show.php:73
 msgid "Order"
 msgstr "காட்சிஆர்டர்"
 
 #: ../pages/content-management-add.php:132
-#: ../pages/content-management-edit.php:154
+#: ../pages/content-management-edit.php:155
 #: ../pages/content-management-show.php:62
-#: ../pages/content-management-show.php:72
+#: ../pages/content-management-show.php:71
 msgid "Display"
 msgstr "காட்சி"
 
 #: ../pages/content-management-add.php:155
-#: ../pages/content-management-edit.php:177
+#: ../pages/content-management-edit.php:178
 msgid "Expiration date"
 msgstr "காலாவதி தேதி"
 
 #: ../pages/content-management-add.php:157
-#: ../pages/content-management-edit.php:179
+#: ../pages/content-management-edit.php:180
 msgid ""
 "Please enter the expiration date in this format YYYY-MM-DD <br /> "
 "9999-12-31 : Is equal to no expire."
@@ -162,68 +162,68 @@ msgid "Submit"
 msgstr "சமர்ப்பி"
 
 #: ../pages/content-management-add.php:163
-#: ../pages/content-management-edit.php:185
+#: ../pages/content-management-edit.php:186
 msgid "Cancel"
 msgstr "ரத்து"
 
 #: ../pages/content-management-add.php:164
-#: ../pages/content-management-edit.php:186
-#: ../pages/content-management-show.php:115
+#: ../pages/content-management-edit.php:187
+#: ../pages/content-management-show.php:113
 msgid "Help"
 msgstr "உதவி"
 
-#: ../pages/content-management-edit.php:17
-#: ../pages/content-management-show.php:20
+#: ../pages/content-management-edit.php:18
+#: ../pages/content-management-show.php:21
 msgid "Oops, selected details doesnt exist."
 msgstr "விவரங்கள் இல்லை."
 
-#: ../pages/content-management-edit.php:114
+#: ../pages/content-management-edit.php:115
 msgid "Details was successfully updated."
 msgstr "விவரங்கள் வெற்றிகரமாக புதுப்பிக்கப்பட்டது."
 
-#: ../pages/content-management-edit.php:140
-#: ../pages/content-management-edit.php:184
+#: ../pages/content-management-edit.php:141
+#: ../pages/content-management-edit.php:185
 msgid "Update Details"
 msgstr "புதுப்பிக்கவும்"
 
-#: ../pages/content-management-show.php:34
+#: ../pages/content-management-show.php:35
 msgid "Selected record was successfully deleted."
 msgstr "வெற்றிகரமாக நீக்கப்பட்டது."
 
-#: ../pages/content-management-show.php:47
-#: ../pages/content-management-show.php:114
+#: ../pages/content-management-show.php:48
+#: ../pages/content-management-show.php:112
 msgid "Add New"
 msgstr "புதிய செய்திகள் சேர்க்க"
 
 #: ../pages/content-management-show.php:63
-#: ../pages/content-management-show.php:73
+#: ../pages/content-management-show.php:72
 msgid "Expiration"
 msgstr "காலாவதி"
 
-#: ../pages/content-management-show.php:89
+#: ../pages/content-management-show.php:87
 msgid "Edit"
 msgstr "திருத்து"
 
-#: ../pages/content-management-show.php:90
+#: ../pages/content-management-show.php:88
 msgid "Delete"
 msgstr "நீக்கு"
 
-#: ../pages/content-management-show.php:104
+#: ../pages/content-management-show.php:102
 msgid "No records available."
 msgstr "பதிவுகள் இல்லை"
 
-#: ../pages/content-management-show.php:119
+#: ../pages/content-management-show.php:117
 msgid "Plugin configuration option"
 msgstr "Plugin configuration option"
 
-#: ../pages/content-management-show.php:121
+#: ../pages/content-management-show.php:119
 msgid "Drag and drop the widget to your sidebar."
 msgstr "Drag and drop the widget to your sidebar."
 
-#: ../pages/content-management-show.php:122
+#: ../pages/content-management-show.php:120
 msgid "Add the ticker in posts or pages using short code."
 msgstr "Add the ticker in posts or pages using short code."
 
-#: ../pages/content-management-show.php:123
+#: ../pages/content-management-show.php:121
 msgid "Add directly in to the theme using PHP code."
 msgstr "Add directly in to the theme using PHP code."
